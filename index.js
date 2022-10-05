@@ -44,11 +44,32 @@ Productos.forEach((product) => {
     `;
     shopContent.append(content);
 
+    
+
     let comprar = document.createElement("button");
     comprar.innerText = "añadir producto";
     comprar.className = "comprar";
-
     content.append(comprar);
+
+    
+    const botonToast = comprar;
+    botonToast.onClick = mostrarToast;
+    function mostrarToast () {
+    Toastify({
+        text: "This is a toast",
+        duration: 3000,
+        destination: "https://github.com/apvarun/toastify-js",
+        newWindow: true,
+        close: true,
+        gravity: "top", // `top` or `bottom`
+        position: "left", // `left`, `center` or `right`
+        stopOnFocus: true, // Prevents dismissing of toast on hover
+        style: {
+          background: "linear-gradient(to right, #00b09b, #96c93d)",
+        },
+        onClick: function(){} // Callback after click
+      }).showToast();
+    };
 
     comprar.addEventListener("click", () => {
         carrito.push({
@@ -57,9 +78,12 @@ Productos.forEach((product) => {
             precio: product.precio,
         });
         console.log(carrito);
+        
     });
 
 });
+
+
 verCarrito.addEventListener("click", () => {
     modalContainer.innerHTML = "";
     modalContainer.style.display = "row";
@@ -72,13 +96,29 @@ verCarrito.addEventListener("click", () => {
     modalbutton.innerText = "X"
     modalbutton.className = "modal-header-button";
 
-    modalbutton.addEventListener("click",() =>{
+    modalbutton.addEventListener("click", () => {
         modalContainer.style.display = "none";
     });
 
+
     modalHeader.append(modalbutton);
 
-    carrito.forEach((product) =>{
+
+    const botonSwal = modalbutton
+    botonSwal.onclick = mostarSwal
+
+    function mostarSwal() {
+        Swal.fire({
+            lcon: "success",
+            title: "cancelar pedido",
+
+        })
+    }
+
+
+
+
+    carrito.forEach((product) => {
         let carritoContent = document.createElement("div")
         carritoContent.className = "modal-content";
         carritoContent.innerHTML = `
