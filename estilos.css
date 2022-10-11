@@ -1,0 +1,125 @@
+.fondo{
+    background-image: linear-gradient(to bottom right, blue , black);
+}
+.titulos{
+    font-family: cursive;
+    color: black;
+    background-image: linear-gradient(to bottom right, black , red);
+    padding: 20px;
+    font-size: 25px;
+    width: 100%;
+    height: auto;
+    text-align: center;
+}
+
+.shop-content{
+    display: flex;
+    justify-content: space-around;
+    flex-wrap: wrap;
+    margin-top: 30px;
+    margin-left: 80px;
+    margin-right: 80px;
+}
+
+
+.card{
+    background-color: rgba(0, 0, 0, 0.555);
+    font-family:cursive;
+    font-size: 18px;
+    color: white;
+    padding: 30px;
+    text-align: center;
+    width: auto;
+    height: auto;
+    margin: 20px;
+    border-radius: 10px;
+    border-color:white;
+}
+.comprar{
+    font-family: cursive;
+    font-size: 18px;
+    color: white;
+    background-image: linear-gradient(to bottom right, black , red);;
+    border-radius: 5px;
+}
+.card button:hover{
+    background-color: black;
+    font-size: 25px;
+
+}
+.ver-carrito{
+    margin-right: 20px;
+}
+.ver-carrito button{
+    background-image: linear-gradient(to bottom right, black , red);
+    font-size: 50px;
+    padding: 10px;
+    border-radius: 10px;
+}
+.ver-carrito button:hover{
+
+    background-color: black;
+}
+.modal-container{
+    width: 80%;
+    margin: 0 10%;
+    max-height: 88vh;
+    background-color: black;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    position: fixed;
+    overflow: auto;
+    z-index: 9;
+    top: 12vh;
+    scrollbar-color: none;
+}
+.modal-container::-webkit-scrollbar{
+    display: none;
+}
+
+.modal-header{
+    background-color: black;
+    color: white;
+    width: 100%;
+    display: flex;
+    justify-content: space-around;
+    
+}
+.modal-header-title{
+    justify-content: start;
+}
+.modal-header-button{
+    background-color: black;
+    padding: 10px;
+    border-radius: 10px;
+}
+.modal-header > .modal-content {
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    align-items: center;
+    width:70% ;
+    margin: 10px;
+}
+.total-content{
+    font-size: 25px;
+    padding: 20px;
+    text-align: center;
+    padding-top: 20px;
+    color: white;
+
+}
+.jumbotron2{
+    font-family: cursive;
+    color: black;
+    background-image: linear-gradient(to bottom right, black , red);
+    padding: 20px;
+    font-size: 25px;
+    width: 100%;
+    height: auto;
+}
+
+
+
+
