@@ -1,16 +1,13 @@
 .fondo{
-    background-image: linear-gradient(to bottom right, blue , black);
+    background-color:  black;
 }
-.titulos{
-    font-family: cursive;
-    color: black;
+.nav-pills{
     background-image: linear-gradient(to bottom right, black , red);
-    padding: 20px;
-    font-size: 25px;
-    width: 100%;
+    width: auto;
     height: auto;
-    text-align: center;
+    font-family: cursive;
 }
+
 
 .shop-content{
     display: flex;
@@ -51,10 +48,11 @@
     margin-right: 20px;
 }
 .ver-carrito button{
-    background-image: linear-gradient(to bottom right, black , red);
-    font-size: 50px;
+    font-size: 20px;
     padding: 10px;
     border-radius: 10px;
+    margin-left: 1000px;
+    margin-top: 10px;
 }
 .ver-carrito button:hover{
 
